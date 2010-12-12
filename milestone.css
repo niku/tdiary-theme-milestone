@@ -1,4 +1,3 @@
-
 /*
   Design by Free CSS Templates
   http://www.freecsstemplates.org
@@ -324,7 +323,11 @@ hr { display: none; }
     padding: 10px;
     background: #fcf9e8;
     overflow: auto;
-    overflow-Y: hidden;  /*--Hides vertical scroll created by IE--*/
+}
+
+.refererlist ul li {
+    word-break:break-all;
+    word-wrap:break-word;
 }
 
 /* Sidebar */
@@ -422,10 +425,10 @@ hr { display: none; }
     text-align: right;
 }
 
-/* Footer */
+/* footer */
 
 .footer {
-    clear:both;
+    clear: both;
     width: 100%;
     height: 90px;
     margin: 0 auto;
@@ -438,4 +441,82 @@ hr { display: none; }
 
 .footer a {
     color: #573D26;
+}
+
+/* for iPhone */
+@media screen and (max-device-width: 480px) {
+    body {
+	font-size: 12px;
+    }
+    #header {
+	margin: 0;
+	padding: 0;
+	width: 480px;
+    }
+    #logo {
+	margin: 0;
+	padding: 0;
+	width: 480px;
+    }
+    #logo h1 {
+	margin: 0;
+	padding: 60px 0px 30px 0px;
+	width: 480px;
+	font-size: 40px;
+    }
+    #header {
+	clear: both;
+	margin: 0;
+	padding: 0;
+	width: 480px;
+    }
+    #menu {
+	margin: 0;
+	padding: 0;
+	width: 240px;
+    }
+    #menu a {
+	padding: 10px;
+    }
+    #search {
+	width: 240px;
+	padding: 0;
+	margin: 0;
+    }
+    #page {
+	margin: 0;
+	padding: 0;
+	width: 480px;
+    }
+    #content {
+	margin: 0;
+	padding: 0;
+	width: 480px;
+    }
+    .autopagerize_page_element {
+	margin: 0;
+	padding: 0;
+	width: 480px;
+    }
+    .autopagerize_page_element h3 {
+	font-size: 12px;
+    }
+    .autopagerize_page_element h3 a {
+	font-size: 12px;
+    }
+    .autopagerize_page_element pre {
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 0px;
+	margin: 0;
+	width: 475px;
+    }
+    #navi {
+	padding: 0;
+	margin: 0 auto;
+	width: 480px;
+    }
+    .footer {
+	width: 480px;
+    }
 }
